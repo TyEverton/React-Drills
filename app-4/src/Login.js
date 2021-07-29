@@ -8,14 +8,13 @@ class Login extends Component { //beginning line of a component
       username: "", //empty array for username
       password: "" //empty array for password
     }
-  }
 
- this.handleLogin = this.handleLogin.bind(this) 
+ this.handleLogin = this.handleLogin.bind(this)//binds handleLogin to states value
 } 
 
 handleUsernameChange(name) {
   this.setState({username: name})
-}
+} 
 
 handlePasswordChange(pass) {
   this.setState({password: pass})
@@ -38,7 +37,8 @@ render() {
       />
       <button onClick={this.handleLogin}>LOGIN</button>
     </div>
-  )
+    )
+  }
 }
 
 export default Login
